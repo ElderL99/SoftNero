@@ -7,25 +7,28 @@ export default function Servicios() {
       <Navbar />
 
       {/* HEADER */}
-      <section className="px-6 py-24 md:py-32 bg-white text-center">
+      <section className="px-6 py-24 md:py-32 bg-white text-center animate-fade-in">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-semibold tracking-tight mb-6 text-jet-black">
             SoftNero — Servicios
           </h1>
-          <p className="text-xl md:text-2xl font-light text-gray-500 tracking-tight">
+          <p className="text-xl md:text-2xl font-light text-gray-600 tracking-tight leading-relaxed">
             Tecnología hecha para crecer tu negocio.
           </p>
         </div>
       </section>
 
       {/* SECCIÓN 1 — Servicios principales */}
-      <section className="px-6 py-20 bg-white border-t border-gray-100">
+      <section
+        className="px-6 py-20 bg-white border-t border-gray-100 animate-fade-in"
+        style={{ animationDelay: "0.2s" }}
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
           {/* Servicio 1 */}
-          <div className="flex flex-col items-start">
-            <div className="w-12 h-12 bg-gray-50 rounded-xl mb-6 flex items-center justify-center">
+          <div className="flex flex-col items-start p-7 rounded-2xl hover:bg-gray-50/50 transition-colors duration-500">
+            <div className="w-14 h-14 bg-gray-50 rounded-xl mb-6 flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-black"
+                className="w-7 h-7 text-black"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -38,10 +41,10 @@ export default function Servicios() {
                 />
               </svg>
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-jet-black">
+            <h3 className="text-2xl font-semibold mb-4 text-jet-black tracking-tight">
               Sistemas Empresariales
             </h3>
-            <p className="text-gray-500 font-light mb-6 leading-relaxed">
+            <p className="text-gray-600 font-light mb-6 leading-relaxed">
               Plataformas completas diseñadas para la operación crítica de tu
               empresa.
             </p>
@@ -66,10 +69,10 @@ export default function Servicios() {
           </div>
 
           {/* Servicio 2 */}
-          <div className="flex flex-col items-start">
-            <div className="w-12 h-12 bg-gray-50 rounded-xl mb-6 flex items-center justify-center">
+          <div className="flex flex-col items-start p-7 rounded-2xl hover:bg-gray-50/50 transition-colors duration-500">
+            <div className="w-14 h-14 bg-gray-50 rounded-xl mb-6 flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-black"
+                className="w-7 h-7 text-black"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -82,10 +85,10 @@ export default function Servicios() {
                 />
               </svg>
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-jet-black">
+            <h3 className="text-2xl font-semibold mb-4 text-jet-black tracking-tight">
               Integraciones & APIs
             </h3>
-            <p className="text-gray-500 font-light mb-6 leading-relaxed">
+            <p className="text-gray-600 font-light mb-6 leading-relaxed">
               Conectamos tus sistemas para que los datos fluyan sin
               interrupciones.
             </p>
@@ -110,10 +113,10 @@ export default function Servicios() {
           </div>
 
           {/* Servicio 3 */}
-          <div className="flex flex-col items-start">
-            <div className="w-12 h-12 bg-gray-50 rounded-xl mb-6 flex items-center justify-center">
+          <div className="flex flex-col items-start p-7 rounded-2xl hover:bg-gray-50/50 transition-colors duration-500">
+            <div className="w-14 h-14 bg-gray-50 rounded-xl mb-6 flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-black"
+                className="w-7 h-7 text-black"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -126,10 +129,10 @@ export default function Servicios() {
                 />
               </svg>
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-jet-black">
+            <h3 className="text-2xl font-semibold mb-4 text-jet-black tracking-tight">
               Desarrollo Web
             </h3>
-            <p className="text-gray-500 font-light mb-6 leading-relaxed">
+            <p className="text-gray-600 font-light mb-6 leading-relaxed">
               Presencia digital de alto impacto con rendimiento optimizado.
             </p>
             <ul className="space-y-3 text-sm text-gray-600 font-medium">
@@ -155,13 +158,16 @@ export default function Servicios() {
       </section>
 
       {/* SECCIÓN 2 — Tecnologías */}
-      <section className="px-6 py-24 bg-gray-50">
+      <section
+        className="px-6 py-24 bg-gray-50 animate-fade-in"
+        style={{ animationDelay: "0.4s" }}
+      >
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-12">
             Stack Tecnológico
           </h2>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Icons placeholders - using text for now as per request "iconos minimalistas en negro" but text is safer if no svgs */}
+            {/* Icons placeholders */}
             <span className="text-xl font-bold text-black">React</span>
             <span className="text-xl font-bold text-black">Next.js</span>
             <span className="text-xl font-bold text-black">Node.js</span>
@@ -174,7 +180,10 @@ export default function Servicios() {
       </section>
 
       {/* SECCIÓN 3 — Proceso de trabajo */}
-      <section className="px-6 py-32 bg-white">
+      <section
+        className="px-6 py-32 bg-white animate-fade-in"
+        style={{ animationDelay: "0.6s" }}
+      >
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-semibold mb-16 text-center tracking-tight">
             Nuestro Proceso
@@ -189,8 +198,10 @@ export default function Servicios() {
               <div className="w-24 h-24 bg-white border border-gray-200 rounded-full flex items-center justify-center mb-6 text-2xl font-bold text-primary shadow-sm">
                 1
               </div>
-              <h3 className="text-xl font-semibold mb-3">Descubrimiento</h3>
-              <p className="text-gray-500 font-light leading-relaxed">
+              <h3 className="text-xl font-semibold mb-3 tracking-tight">
+                Descubrimiento
+              </h3>
+              <p className="text-gray-600 font-light leading-relaxed">
                 Entendemos tu negocio, reglas, procesos y necesidades reales
                 antes de escribir una sola línea de código.
               </p>
@@ -201,10 +212,10 @@ export default function Servicios() {
               <div className="w-24 h-24 bg-white border border-gray-200 rounded-full flex items-center justify-center mb-6 text-2xl font-bold text-primary shadow-sm">
                 2
               </div>
-              <h3 className="text-xl font-semibold mb-3">
+              <h3 className="text-xl font-semibold mb-3 tracking-tight">
                 Desarrollo Iterativo
               </h3>
-              <p className="text-gray-500 font-light leading-relaxed">
+              <p className="text-gray-600 font-light leading-relaxed">
                 Código limpio y estable con entregas continuas para que veas el
                 progreso real de tu aplicación.
               </p>
@@ -215,8 +226,10 @@ export default function Servicios() {
               <div className="w-24 h-24 bg-white border border-gray-200 rounded-full flex items-center justify-center mb-6 text-2xl font-bold text-primary shadow-sm">
                 3
               </div>
-              <h3 className="text-xl font-semibold mb-3">Entrega + Soporte</h3>
-              <p className="text-gray-500 font-light leading-relaxed">
+              <h3 className="text-xl font-semibold mb-3 tracking-tight">
+                Entrega + Soporte
+              </h3>
+              <p className="text-gray-600 font-light leading-relaxed">
                 Despliegue a producción, configuración de servidores y soporte
                 continuo para tu tranquilidad.
               </p>
