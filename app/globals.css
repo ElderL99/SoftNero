@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* SoftNero Palette */
+  --color-jet-black: #111111;
+  --color-soft-charcoal: #2b2b2b;
+  --color-ash-gray: #bfbfbf;
+  --color-cloud-gray: #f4f4f4;
+  --color-pure-white: #ffffff;
+  --color-neo-blue: #4d7cfe;
+
+  /* Semantic mappings */
+  --background: var(--color-pure-white);
+  --foreground: var(--color-jet-black);
+  --primary: var(--color-neo-blue);
+  --secondary: var(--color-soft-charcoal);
+  --muted: var(--color-cloud-gray);
+  --border: var(--color-ash-gray);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --color-jet: var(--color-jet-black);
+  --color-charcoal: var(--color-soft-charcoal);
+  --color-ash: var(--color-ash-gray);
+  --color-cloud: var(--color-cloud-gray);
+  --color-neo: var(--color-neo-blue);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Optional Dark Mode overrides if needed later, 
+       but user requested "Clean White" style primarily.
+       Keeping it light by default as per request. */
+    /* --background: #0a0a0a; */
+    /* --foreground: #ededed; */
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
