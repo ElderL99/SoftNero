@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  /* SoftNero Palette */
+  --background: #fbfbfd; /* Apple Off-White */
+  --foreground: #111111;
+
+  /* SoftNero Palette - Light */
   --color-jet-black: #111111;
   --color-soft-charcoal: #2b2b2b;
   --color-ash-gray: #bfbfbf;
@@ -9,41 +12,24 @@
   --color-pure-white: #ffffff;
   --color-neo-blue: #4d7cfe;
 
-  /* Semantic mappings */
-  --background: var(--color-pure-white);
-  --foreground: var(--color-jet-black);
+  /* Semantic - Light */
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.05); /* Ultra subtle gray */
+  --text-secondary: #6e6e73; /* Apple gray */
+  --muted-bg: #f5f5f7; /* Apple muted */
+
   --primary: var(--color-neo-blue);
-  --secondary: var(--color-soft-charcoal);
-  --muted: var(--color-cloud-gray);
-  --border: var(--color-ash-gray);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-muted: var(--muted);
-  --color-border: var(--border);
-
-  --color-jet: var(--color-jet-black);
-  --color-charcoal: var(--color-soft-charcoal);
-  --color-ash: var(--color-ash-gray);
   --color-cloud: var(--color-cloud-gray);
   --color-neo: var(--color-neo-blue);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Optional Dark Mode overrides if needed later, 
-       but user requested "Clean White" style primarily.
-       Keeping it light by default as per request. */
-    /* --background: #0a0a0a; */
-    /* --foreground: #ededed; */
-  }
 }
 
 body {
@@ -74,4 +60,35 @@ h6 {
 
 .animate-fade-in {
   animation: fade-in 0.8s ease-out forwards;
+}
+
+.nav-light {
+  color: var(--foreground) !important;
+}
+
+/* Animated */
+
+.bg-glass-orbs {
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(93, 155, 255, 0.25),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255, 103, 155, 0.25),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 50% 90%,
+      rgba(255, 210, 110, 0.2),
+      transparent 70%
+    );
+  backdrop-filter: blur(60px);
+}
+
+.bg-mesh {
+  background: radial-gradient(circle at 15% 50%, #eff5ff, transparent 60%),
+    radial-gradient(circle at 75% 40%, #e7e7ff, transparent 60%),
+    radial-gradient(circle at 50% 80%, #fdf6e3, transparent 60%);
 }

@@ -1,28 +1,28 @@
-import Navbar from "../src/components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 import ProjectEscuadron from "../public/project-escuadron.png";
+import BackgroundOrb from "@/src/components/BackgroundOrb";
+import Navbar from "@/src/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col font-sans text-foreground bg-background selection:bg-primary/10 selection:text-primary">
+    <div className="min-h-screen flex flex-col font-sans text-foreground bg-background selection:bg-primary/10 selection:text-primary bg-mesh w-full">
       <Navbar />
-
       {/* 1. HERO PRINCIPAL - Minimal Apple */}
-      <section className="flex flex-col items-center justify-center text-center px-6 py-32 md:py-48 max-w-6xl mx-auto animate-fade-in">
+      <section className="flex flex-col items-center justify-center text-center px-6 py-32 md:py-48 max-w-6xl mx-auto animate-fade-in  w-full pt-40">
         <h1 className="text-5xl md:text-7xl font-semibold tracking-tight mb-6 text-jet-black">
           SoftNero
         </h1>
 
-        <p className="text-2xl md:text-4xl font-extralight tracking-tight text-gray-600 mb-4 leading-relaxed">
+        <p className="text-2xl md:text-4xl font-extralight tracking-tight text-text-secondary mb-4 leading-relaxed">
           Tecnología que impulsa tu negocio.
         </p>
 
-        <p className="text-xl text-gray-600 font-light max-w-2xl mx-auto mb-12 leading-relaxed">
+        <p className="text-xl text-text-secondary font-light max-w-2xl mx-auto mb-12 leading-relaxed">
           Sistemas empresariales modernos, claros y eficientes.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6">
+        <div className="flex flex-col sm:flex-row gap-6 ">
           <Link
             href="/contacto"
             className="px-8 py-3 bg-primary text-white font-medium rounded-full hover:bg-blue-600 transition-all duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30"
@@ -31,24 +31,24 @@ export default function Home() {
           </Link>
           <Link
             href="/servicios"
-            className="px-8 py-3 border border-gray-200 text-foreground font-medium rounded-full hover:bg-gray-50 transition-all duration-300 hover:border-gray-300"
+            className="px-8 py-3 border border-card-border text-foreground font-medium rounded-full hover:bg-card-bg transition-all duration-300 hover:border-gray-300"
           >
             Ver portafolio
           </Link>
         </div>
       </section>
-
+      <BackgroundOrb />
       {/* 2. SECCIONES - 3 Columnas Minimalistas */}
       <section
-        className="px-6 py-24 bg-white animate-fade-in"
+        className="px-6 py-24 bg-card-bg animate-fade-in bg-transparent w-full "
         style={{ animationDelay: "0.2s" }}
       >
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 ">
           {/* Column 1 */}
-          <div className="flex flex-col items-start group p-7 rounded-2xl hover:bg-gray-50/50 transition-colors duration-500">
-            <div className="mb-6 p-4 bg-gray-50 rounded-2xl group-hover:bg-blue-50 transition-colors duration-500">
+          <div className="flex flex-col items-start group p-7 rounded-2xl hover:bg-muted-bg transition-colors duration-500 bg-transparent">
+            <div className="mb-6 p-4 bg-muted-bg rounded-2xl group-hover:bg-blue-50 transition-colors duration-500">
               <svg
-                className="w-7 h-7 text-black group-hover:text-primary transition-colors duration-500"
+                className="w-7 h-7 text-foreground group-hover:text-primary transition-colors duration-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -64,17 +64,17 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-3 text-jet-black tracking-tight">
               Sistemas a Medida
             </h3>
-            <p className="text-gray-600 font-light leading-relaxed">
+            <p className="text-text-secondary font-light leading-relaxed">
               Arquitectura diseñada específicamente para tus procesos
               operativos. Sin excesos, solo lo que necesitas.
             </p>
           </div>
 
           {/* Column 2 */}
-          <div className="flex flex-col items-start group p-7 rounded-2xl hover:bg-gray-50/50 transition-colors duration-500">
-            <div className="mb-6 p-4 bg-gray-50 rounded-2xl group-hover:bg-blue-50 transition-colors duration-500">
+          <div className="flex flex-col items-start group p-7 rounded-2xl hover:bg-muted-bg transition-colors duration-500">
+            <div className="mb-6 p-4 bg-muted-bg rounded-2xl group-hover:bg-blue-50 transition-colors duration-500">
               <svg
-                className="w-7 h-7 text-black group-hover:text-primary transition-colors duration-500"
+                className="w-7 h-7 text-foreground group-hover:text-primary transition-colors duration-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -90,17 +90,17 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-3 text-jet-black tracking-tight">
               Alto Rendimiento
             </h3>
-            <p className="text-gray-600 font-light leading-relaxed">
+            <p className="text-text-secondary font-light leading-relaxed">
               Optimización extrema en cada línea de código. Tus aplicaciones
               cargarán al instante.
             </p>
           </div>
 
           {/* Column 3 */}
-          <div className="flex flex-col items-start group p-7 rounded-2xl hover:bg-gray-50/50 transition-colors duration-500">
-            <div className="mb-6 p-4 bg-gray-50 rounded-2xl group-hover:bg-blue-50 transition-colors duration-500">
+          <div className="flex flex-col items-start group p-7 rounded-2xl hover:bg-muted-bg transition-colors duration-500">
+            <div className="mb-6 p-4 bg-muted-bg rounded-2xl group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors duration-500">
               <svg
-                className="w-7 h-7 text-black group-hover:text-primary transition-colors duration-500"
+                className="w-7 h-7 text-foreground group-hover:text-primary transition-colors duration-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -116,7 +116,7 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-3 text-jet-black tracking-tight">
               Seguridad Total
             </h3>
-            <p className="text-gray-600 font-light leading-relaxed">
+            <p className="text-text-secondary font-light leading-relaxed">
               Protección de datos empresariales con estándares bancarios. Tu
               información siempre segura.
             </p>
@@ -126,27 +126,27 @@ export default function Home() {
 
       {/* 3. SHOWCASE - Bordes delgadísimos */}
       <section
-        className="px-6 py-24 bg-white animate-fade-in"
+        className="px-6 py-24 bg-background animate-fade-in"
         style={{ animationDelay: "0.4s" }}
       >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-16 text-center tracking-tight">
+          <h2 className="text-3xl font-semibold mb-16 text-center tracking-tight text-jet-black">
             Proyectos Destacados
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Project 1 - Escuadrón Financiero */}
-            <div className="group border border-[#eeeeee] rounded-xl p-8 hover:shadow-xl transition-all duration-500 bg-white hover:-translate-y-1 flex flex-col">
+            <div className="group rounded-xl p-8 hover:shadow-xl transition-all duration-500 bg-card-bg hover:-translate-y-1 flex flex-col">
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-1 tracking-tight">
+                <h3 className="text-lg font-semibold mb-1 tracking-tight text-jet-black">
                   Escuadrón Financiero
                 </h3>
-                <p className="text-sm text-gray-500 font-light">
+                <p className="text-sm text-text-secondary font-light">
                   Fintech / Préstamos
                 </p>
               </div>
 
-              <div className="h-48 bg-gray-50 rounded-lg mb-6 overflow-hidden relative shadow-sm border border-gray-100">
+              <div className="h-48 bg-muted-bg rounded-lg mb-6 overflow-hidden relative shadow-sm border border-card-border">
                 <Image
                   src={ProjectEscuadron}
                   alt="Escuadrón Financiero"
@@ -156,60 +156,60 @@ export default function Home() {
               </div>
 
               <div className="flex gap-2 mt-auto">
-                <span className="px-3 py-1 bg-gray-50 text-xs text-gray-600 rounded-full font-medium">
+                <span className="px-3 py-1 bg-muted-bg text-xs text-text-secondary rounded-full font-medium">
                   SaaS
                 </span>
-                <span className="px-3 py-1 bg-gray-50 text-xs text-gray-600 rounded-full font-medium">
+                <span className="px-3 py-1 bg-muted-bg text-xs text-text-secondary rounded-full font-medium">
                   Dashboard
                 </span>
               </div>
             </div>
 
             {/* Project 2 - Sistema de Inventario */}
-            <div className="group border border-[#eeeeee] rounded-xl p-8 hover:shadow-xl transition-all duration-500 bg-white hover:-translate-y-1 flex flex-col">
+            <div className="group rounded-xl p-8 hover:shadow-xl transition-all duration-500 bg-card-bg hover:-translate-y-1 flex flex-col">
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-1 tracking-tight">
+                <h3 className="text-lg font-semibold mb-1 tracking-tight text-jet-black">
                   Sistema de Inventario
                 </h3>
-                <p className="text-sm text-gray-500 font-light">
+                <p className="text-sm text-text-secondary font-light">
                   Logística / Control
                 </p>
               </div>
 
-              <div className="h-48 bg-gray-50 rounded-lg mb-6 flex items-center justify-center text-gray-300 group-hover:bg-blue-50/30 transition-colors border border-gray-100">
+              <div className="h-48 bg-muted-bg rounded-lg mb-6 flex items-center justify-center text-gray-300 group-hover:bg-blue-50/30 transition-colors ">
                 <span className="font-light text-sm">App Preview</span>
               </div>
 
               <div className="flex gap-2 mt-auto">
-                <span className="px-3 py-1 bg-gray-50 text-xs text-gray-600 rounded-full font-medium">
+                <span className="px-3 py-1 bg-muted-bg text-xs text-text-secondary rounded-full font-medium">
                   ERP
                 </span>
-                <span className="px-3 py-1 bg-gray-50 text-xs text-gray-600 rounded-full font-medium">
+                <span className="px-3 py-1 bg-muted-bg text-xs text-text-secondary rounded-full font-medium">
                   Real-time
                 </span>
               </div>
             </div>
 
             {/* Project 3 - CRM de Cartera */}
-            <div className="group border border-[#eeeeee] rounded-xl p-8 hover:shadow-xl transition-all duration-500 bg-white hover:-translate-y-1 flex flex-col">
+            <div className="group  rounded-xl p-8 hover:shadow-xl transition-all duration-500 bg-card-bg hover:-translate-y-1 flex flex-col">
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-1 tracking-tight">
+                <h3 className="text-lg font-semibold mb-1 tracking-tight text-jet-black">
                   CRM de Cartera
                 </h3>
-                <p className="text-sm text-gray-500 font-light">
+                <p className="text-sm text-text-secondary font-light">
                   Gestión de Clientes
                 </p>
               </div>
 
-              <div className="h-48 bg-gray-50 rounded-lg mb-6 flex items-center justify-center text-gray-300 group-hover:bg-blue-50/30 transition-colors border border-gray-100">
+              <div className="h-48 bg-muted-bg rounded-lg mb-6 flex items-center justify-center text-gray-300 group-hover:bg-blue-50/30 dark:group-hover:bg-blue-900/20 transition-colors ">
                 <span className="font-light text-sm">App Preview</span>
               </div>
 
               <div className="flex gap-2 mt-auto">
-                <span className="px-3 py-1 bg-gray-50 text-xs text-gray-600 rounded-full font-medium">
+                <span className="px-3 py-1 bg-muted-bg text-xs text-text-secondary rounded-full font-medium">
                   CRM
                 </span>
-                <span className="px-3 py-1 bg-gray-50 text-xs text-gray-600 rounded-full font-medium">
+                <span className="px-3 py-1 bg-muted-bg text-xs text-text-secondary rounded-full font-medium">
                   Analytics
                 </span>
               </div>
@@ -220,7 +220,7 @@ export default function Home() {
 
       {/* 4. TESTIMONIO - Apple Quote */}
       <section
-        className="px-6 py-32 bg-white animate-fade-in"
+        className="px-6 py-32 bg-card-bg animate-fade-in"
         style={{ animationDelay: "0.6s" }}
       >
         <div className="max-w-4xl mx-auto text-center">
@@ -229,25 +229,27 @@ export default function Home() {
             simplemente funciona. Limpio, rápido y sin fricción.”
           </blockquote>
           <div className="flex flex-col items-center">
-            <div className="w-12 h-12 bg-gray-100 rounded-full mb-3"></div>
-            <cite className="text-sm font-semibold text-gray-900 not-italic">
+            <div className="w-12 h-12 bg-muted-bg rounded-full mb-3"></div>
+            <cite className="text-sm font-semibold text-foreground not-italic">
               Director de Operaciones
             </cite>
-            <span className="text-sm text-gray-500">Empresa Financiera</span>
+            <span className="text-sm text-text-secondary">
+              Empresa Financiera
+            </span>
           </div>
         </div>
       </section>
 
       {/* 5. CTA FINAL */}
       <section
-        className="px-6 py-32 bg-[#f8f8f8] animate-fade-in"
+        className="px-6 py-32 bg-muted-bg animate-fade-in bg-white"
         style={{ animationDelay: "0.8s" }}
       >
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-6 tracking-tight">
+          <h2 className="text-3xl font-semibold mb-6 tracking-tight text-jet-black">
             ¿Listo para comenzar?
           </h2>
-          <p className="text-gray-500 font-light text-lg mb-10 leading-relaxed">
+          <p className="text-text-secondary font-light text-lg mb-10 leading-relaxed">
             Llevamos tu empresa al siguiente nivel tecnológico.
           </p>
           <Link
@@ -260,23 +262,29 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="px-6 py-12 bg-white border-t border-gray-100">
+      <footer className="px-6 py-12 bg-background border-t border-card-border">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <span className="text-sm font-semibold text-jet-black">SoftNero</span>
-          <div className="flex gap-8 text-sm text-gray-500 font-light">
+          <div className="flex gap-8 text-sm text-text-secondary font-light">
             <Link
               href="/servicios"
-              className="hover:text-black transition-colors"
+              className="hover:text-foreground transition-colors"
             >
               Servicios
             </Link>
             <Link
               href="/contacto"
-              className="hover:text-black transition-colors"
+              className="hover:text-foreground transition-colors"
             >
               Contacto
             </Link>
-            <a href="#" className="hover:text-black transition-colors">
+            <Link
+              href="/blog"
+              className="hover:text-foreground transition-colors"
+            >
+              Blog
+            </Link>
+            <a href="#" className="hover:text-foreground transition-colors">
               LinkedIn
             </a>
           </div>

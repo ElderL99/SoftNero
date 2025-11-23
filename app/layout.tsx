@@ -5,20 +5,19 @@ import "./globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  display: "swap",
+  weight: ["300", "400", "500", "600"],
 });
 
 const poppins = Poppins({
   variable: "--font-poppins",
-  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "SoftNero | Software Empresarial y Soluciones Reales",
+  title: "SoftNero | Sistemas Empresariales Modernos",
   description:
-    "Sistemas modernos para negocios que necesitan eficiencia, control y resultados.",
+    "Desarrollo de software a medida, CRMs, ERPs y soluciones cloud para empresas que buscan eficiencia y escalabilidad.",
 };
 
 export default function RootLayout({
@@ -28,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${inter.variable} ${poppins.variable} antialiased font-sans`}
-      >
+      <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         {children}
       </body>
     </html>

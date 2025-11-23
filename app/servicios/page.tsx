@@ -7,12 +7,12 @@ export default function Servicios() {
       <Navbar />
 
       {/* HEADER */}
-      <section className="px-6 py-24 md:py-32 bg-white text-center animate-fade-in">
+      <section className="px-6 py-24 md:py-32 bg-background text-center animate-fade-in">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-semibold tracking-tight mb-6 text-jet-black">
             SoftNero — Servicios
           </h1>
-          <p className="text-xl md:text-2xl font-light text-gray-600 tracking-tight leading-relaxed">
+          <p className="text-xl md:text-2xl font-light text-text-secondary tracking-tight leading-relaxed">
             Tecnología hecha para crecer tu negocio.
           </p>
         </div>
@@ -20,15 +20,15 @@ export default function Servicios() {
 
       {/* SECCIÓN 1 — Servicios principales */}
       <section
-        className="px-6 py-20 bg-white border-t border-gray-100 animate-fade-in"
+        className="px-6 py-20 bg-background border-t border-card-border animate-fade-in"
         style={{ animationDelay: "0.2s" }}
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
           {/* Servicio 1 */}
-          <div className="flex flex-col items-start p-7 rounded-2xl hover:bg-gray-50/50 transition-colors duration-500">
-            <div className="w-14 h-14 bg-gray-50 rounded-xl mb-6 flex items-center justify-center">
+          <div className="flex flex-col items-start p-7 rounded-2xl hover:bg-muted-bg transition-colors duration-500">
+            <div className="w-14 h-14 bg-muted-bg rounded-xl mb-6 flex items-center justify-center">
               <svg
-                className="w-7 h-7 text-black"
+                className="w-7 h-7 text-foreground"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -44,11 +44,11 @@ export default function Servicios() {
             <h3 className="text-2xl font-semibold mb-4 text-jet-black tracking-tight">
               Sistemas Empresariales
             </h3>
-            <p className="text-gray-600 font-light mb-6 leading-relaxed">
+            <p className="text-text-secondary font-light mb-6 leading-relaxed">
               Plataformas completas diseñadas para la operación crítica de tu
               empresa.
             </p>
-            <ul className="space-y-3 text-sm text-gray-600 font-medium">
+            <ul className="space-y-3 text-sm text-text-secondary font-medium">
               <li className="flex items-center gap-3">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
                 CRMs y ERPs a medida
@@ -69,10 +69,10 @@ export default function Servicios() {
           </div>
 
           {/* Servicio 2 */}
-          <div className="flex flex-col items-start p-7 rounded-2xl hover:bg-gray-50/50 transition-colors duration-500">
-            <div className="w-14 h-14 bg-gray-50 rounded-xl mb-6 flex items-center justify-center">
+          <div className="flex flex-col items-start p-7 rounded-2xl hover:bg-muted-bg transition-colors duration-500">
+            <div className="w-14 h-14 bg-muted-bg rounded-xl mb-6 flex items-center justify-center">
               <svg
-                className="w-7 h-7 text-black"
+                className="w-7 h-7 text-foreground"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -88,11 +88,11 @@ export default function Servicios() {
             <h3 className="text-2xl font-semibold mb-4 text-jet-black tracking-tight">
               Integraciones & APIs
             </h3>
-            <p className="text-gray-600 font-light mb-6 leading-relaxed">
+            <p className="text-text-secondary font-light mb-6 leading-relaxed">
               Conectamos tus sistemas para que los datos fluyan sin
               interrupciones.
             </p>
-            <ul className="space-y-3 text-sm text-gray-600 font-medium">
+            <ul className="space-y-3 text-sm text-text-secondary font-medium">
               <li className="flex items-center gap-3">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
                 Desarrollo de APIs REST/GraphQL
@@ -113,10 +113,10 @@ export default function Servicios() {
           </div>
 
           {/* Servicio 3 */}
-          <div className="flex flex-col items-start p-7 rounded-2xl hover:bg-gray-50/50 transition-colors duration-500">
-            <div className="w-14 h-14 bg-gray-50 rounded-xl mb-6 flex items-center justify-center">
+          <div className="flex flex-col items-start p-7 rounded-2xl hover:bg-muted-bg transition-colors duration-500">
+            <div className="w-14 h-14 bg-muted-bg rounded-xl mb-6 flex items-center justify-center">
               <svg
-                className="w-7 h-7 text-black"
+                className="w-7 h-7 text-foreground"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -132,10 +132,10 @@ export default function Servicios() {
             <h3 className="text-2xl font-semibold mb-4 text-jet-black tracking-tight">
               Desarrollo Web
             </h3>
-            <p className="text-gray-600 font-light mb-6 leading-relaxed">
+            <p className="text-text-secondary font-light mb-6 leading-relaxed">
               Presencia digital de alto impacto con rendimiento optimizado.
             </p>
-            <ul className="space-y-3 text-sm text-gray-600 font-medium">
+            <ul className="space-y-3 text-sm text-text-secondary font-medium">
               <li className="flex items-center gap-3">
                 <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
                 Sitios corporativos
@@ -159,77 +159,77 @@ export default function Servicios() {
 
       {/* SECCIÓN 2 — Tecnologías */}
       <section
-        className="px-6 py-24 bg-gray-50 animate-fade-in"
+        className="px-6 py-24 bg-muted-bg animate-fade-in"
         style={{ animationDelay: "0.4s" }}
       >
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-12">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-text-secondary mb-12">
             Stack Tecnológico
           </h2>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
             {/* Icons placeholders */}
-            <span className="text-xl font-bold text-black">React</span>
-            <span className="text-xl font-bold text-black">Next.js</span>
-            <span className="text-xl font-bold text-black">Node.js</span>
-            <span className="text-xl font-bold text-black">Express</span>
-            <span className="text-xl font-bold text-black">MongoDB</span>
-            <span className="text-xl font-bold text-black">AWS</span>
-            <span className="text-xl font-bold text-black">Tailwind</span>
+            <span className="text-xl font-bold text-foreground">React</span>
+            <span className="text-xl font-bold text-foreground">Next.js</span>
+            <span className="text-xl font-bold text-foreground">Node.js</span>
+            <span className="text-xl font-bold text-foreground">Express</span>
+            <span className="text-xl font-bold text-foreground">MongoDB</span>
+            <span className="text-xl font-bold text-foreground">AWS</span>
+            <span className="text-xl font-bold text-foreground">Tailwind</span>
           </div>
         </div>
       </section>
 
       {/* SECCIÓN 3 — Proceso de trabajo */}
       <section
-        className="px-6 py-32 bg-white animate-fade-in"
+        className="px-6 py-32 bg-background animate-fade-in"
         style={{ animationDelay: "0.6s" }}
       >
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-16 text-center tracking-tight">
+          <h2 className="text-3xl font-semibold mb-16 text-center tracking-tight text-jet-black">
             Nuestro Proceso
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
             {/* Connecting line for desktop */}
-            <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-100 -z-10"></div>
+            <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-card-border -z-10"></div>
 
             {/* Step 1 */}
-            <div className="flex flex-col items-center text-center bg-white p-4">
-              <div className="w-24 h-24 bg-white border border-gray-200 rounded-full flex items-center justify-center mb-6 text-2xl font-bold text-primary shadow-sm">
+            <div className="flex flex-col items-center text-center bg-background p-4">
+              <div className="w-24 h-24 bg-background border border-card-border rounded-full flex items-center justify-center mb-6 text-2xl font-bold text-primary shadow-sm">
                 1
               </div>
-              <h3 className="text-xl font-semibold mb-3 tracking-tight">
+              <h3 className="text-xl font-semibold mb-3 tracking-tight text-jet-black">
                 Descubrimiento
               </h3>
-              <p className="text-gray-600 font-light leading-relaxed">
+              <p className="text-text-secondary font-light leading-relaxed">
                 Entendemos tu negocio, reglas, procesos y necesidades reales
                 antes de escribir una sola línea de código.
               </p>
             </div>
 
             {/* Step 2 */}
-            <div className="flex flex-col items-center text-center bg-white p-4">
-              <div className="w-24 h-24 bg-white border border-gray-200 rounded-full flex items-center justify-center mb-6 text-2xl font-bold text-primary shadow-sm">
+            <div className="flex flex-col items-center text-center bg-background p-4">
+              <div className="w-24 h-24 bg-background border border-card-border rounded-full flex items-center justify-center mb-6 text-2xl font-bold text-primary shadow-sm">
                 2
               </div>
-              <h3 className="text-xl font-semibold mb-3 tracking-tight">
+              <h3 className="text-xl font-semibold mb-3 tracking-tight text-jet-black">
                 Desarrollo Iterativo
               </h3>
-              <p className="text-gray-600 font-light leading-relaxed">
+              <p className="text-text-secondary font-light leading-relaxed">
                 Código limpio y estable con entregas continuas para que veas el
                 progreso real de tu aplicación.
               </p>
             </div>
 
             {/* Step 3 */}
-            <div className="flex flex-col items-center text-center bg-white p-4">
-              <div className="w-24 h-24 bg-white border border-gray-200 rounded-full flex items-center justify-center mb-6 text-2xl font-bold text-primary shadow-sm">
+            <div className="flex flex-col items-center text-center bg-background p-4">
+              <div className="w-24 h-24 bg-background border border-card-border rounded-full flex items-center justify-center mb-6 text-2xl font-bold text-primary shadow-sm">
                 3
               </div>
-              <h3 className="text-xl font-semibold mb-3 tracking-tight">
+              <h3 className="text-xl font-semibold mb-3 tracking-tight text-jet-black">
                 Entrega + Soporte
               </h3>
-              <p className="text-gray-600 font-light leading-relaxed">
+              <p className="text-text-secondary font-light leading-relaxed">
                 Despliegue a producción, configuración de servidores y soporte
                 continuo para tu tranquilidad.
               </p>
@@ -239,20 +239,26 @@ export default function Servicios() {
       </section>
 
       {/* FOOTER */}
-      <footer className="px-6 py-12 bg-white border-t border-gray-100">
+      <footer className="px-6 py-12 bg-background border-t border-card-border">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <span className="text-sm font-semibold text-jet-black">SoftNero</span>
-          <div className="flex gap-8 text-sm text-gray-500 font-light">
-            <Link href="/" className="hover:text-black transition-colors">
+          <div className="flex gap-8 text-sm text-text-secondary font-light">
+            <Link href="/" className="hover:text-foreground transition-colors">
               Home
             </Link>
             <Link
               href="/contacto"
-              className="hover:text-black transition-colors"
+              className="hover:text-foreground transition-colors"
             >
               Contacto
             </Link>
-            <a href="#" className="hover:text-black transition-colors">
+            <Link
+              href="/blog"
+              className="hover:text-foreground transition-colors"
+            >
+              Blog
+            </Link>
+            <a href="#" className="hover:text-foreground transition-colors">
               LinkedIn
             </a>
           </div>

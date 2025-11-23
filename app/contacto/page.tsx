@@ -7,19 +7,19 @@ export default function Contacto() {
       <Navbar />
 
       {/* HERO CONTACTO */}
-      <section className="px-6 py-24 md:py-32 bg-white text-center">
+      <section className="px-6 py-24 md:py-32 bg-background text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-semibold tracking-tight mb-6 text-jet-black">
             Ponte en contacto
           </h1>
-          <p className="text-xl md:text-2xl font-light text-gray-500 tracking-tight">
+          <p className="text-xl md:text-2xl font-light text-text-secondary tracking-tight">
             SoftNero está listo para construir tu próximo sistema.
           </p>
         </div>
       </section>
 
       {/* FORMULARIO + INFO */}
-      <section className="px-6 py-12 bg-white">
+      <section className="px-6 py-12 bg-background">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
           {/* Formulario Minimal */}
           <div className="flex flex-col">
@@ -27,14 +27,14 @@ export default function Contacto() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 mb-2"
+                  className="block text-sm font-medium text-text-secondary mb-2"
                 >
                   Nombre
                 </label>
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-4 py-3 rounded-lg bg-white border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-card-bg border border-card-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-foreground placeholder:text-gray-400"
                   placeholder="Tu nombre"
                 />
               </div>
@@ -42,14 +42,14 @@ export default function Contacto() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-2"
+                  className="block text-sm font-medium text-text-secondary mb-2"
                 >
                   Email
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-3 rounded-lg bg-white border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-card-bg border border-card-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-foreground placeholder:text-gray-400"
                   placeholder="tu@empresa.com"
                 />
               </div>
@@ -57,14 +57,14 @@ export default function Contacto() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 mb-2"
+                  className="block text-sm font-medium text-text-secondary mb-2"
                 >
                   Mensaje
                 </label>
                 <textarea
                   id="message"
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg bg-white border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-card-bg border border-card-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none text-foreground placeholder:text-gray-400"
                   placeholder="Cuéntanos sobre tu proyecto..."
                 ></textarea>
               </div>
@@ -87,9 +87,9 @@ export default function Contacto() {
               <div className="space-y-4">
                 <a
                   href="mailto:contacto@softnero.com"
-                  className="flex items-center gap-4 text-gray-600 hover:text-primary transition-colors group"
+                  className="flex items-center gap-4 text-text-secondary hover:text-primary transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-muted-bg flex items-center justify-center group-hover:bg-blue-50 transition-colors">
                     <svg
                       className="w-5 h-5"
                       fill="none"
@@ -111,9 +111,9 @@ export default function Contacto() {
 
                 <a
                   href="#"
-                  className="flex items-center gap-4 text-gray-600 hover:text-primary transition-colors group"
+                  className="flex items-center gap-4 text-text-secondary hover:text-primary transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-muted-bg flex items-center justify-center group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors">
                     <svg
                       className="w-5 h-5"
                       fill="none"
@@ -137,7 +137,7 @@ export default function Contacto() {
               <h3 className="text-lg font-semibold mb-4 text-jet-black">
                 Horario de Atención
               </h3>
-              <p className="text-gray-500 font-light">
+              <p className="text-text-secondary font-light">
                 Lunes a Sábado
                 <br />
                 9:00 am – 6:00 pm
@@ -148,9 +148,9 @@ export default function Contacto() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="px-6 py-24 bg-[#f8f8f8] text-center mt-12">
+      <section className="px-6 py-24 bg-muted-bg text-center mt-12">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-6 tracking-tight">
+          <h2 className="text-3xl font-semibold mb-6 tracking-tight text-jet-black">
             ¿Listo para comenzar?
           </h2>
           <Link
@@ -163,20 +163,26 @@ export default function Contacto() {
       </section>
 
       {/* FOOTER */}
-      <footer className="px-6 py-12 bg-white border-t border-gray-100">
+      <footer className="px-6 py-12 bg-background border-t border-card-border">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <span className="text-sm font-semibold text-jet-black">SoftNero</span>
-          <div className="flex gap-8 text-sm text-gray-500 font-light">
-            <Link href="/" className="hover:text-black transition-colors">
+          <div className="flex gap-8 text-sm text-text-secondary font-light">
+            <Link href="/" className="hover:text-foreground transition-colors">
               Home
             </Link>
             <Link
               href="/servicios"
-              className="hover:text-black transition-colors"
+              className="hover:text-foreground transition-colors"
             >
               Servicios
             </Link>
-            <a href="#" className="hover:text-black transition-colors">
+            <Link
+              href="/blog"
+              className="hover:text-foreground transition-colors"
+            >
+              Blog
+            </Link>
+            <a href="#" className="hover:text-foreground transition-colors">
               LinkedIn
             </a>
           </div>
