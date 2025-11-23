@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "SoftNero | Sistemas Empresariales Modernos",
   description:
     "Desarrollo de software a medida, CRMs, ERPs y soluciones cloud para empresas que buscan eficiencia y escalabilidad.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
